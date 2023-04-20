@@ -1,0 +1,40 @@
+@extends('layouts.app')
+
+@section('template_title')
+    Create Empleado
+@endsection
+
+@section('content')
+    <section class="py-4 container mt-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                @includeif('partials.errors')
+                <h3 class="marco2"><i class="fa fa-users"><b></i> Crear Empleado</h3></b>
+                <div class="card cabecera1 card-default">
+                <div class="card-header cabecera2" style="border-top: solid 4px green;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span id="card_title">
+                            {{ __('Crear Empleado') }}
+                        </span>
+
+                        <div class="float-right">
+                            <a href="{{ route('empleados.index') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
+                                <i class="fa fa-chevron-left"></i>{{ __(' Volver') }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card-body">
+                        <form method="POST" action="{{ route('empleados.store') }}"  role="form" enctype="multipart/form-data">
+                            @csrf
+
+                            @include('empleado.form')
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
