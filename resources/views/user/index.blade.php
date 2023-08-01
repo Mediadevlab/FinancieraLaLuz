@@ -16,8 +16,8 @@ User
     
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div class="card">
-                <div class="card-header" style="border-top: solid 4px #344966;">
+            <div class="card cabecera1">
+                <div class="card-header cabecera2" style="border-top: solid 4px #344966;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
 
                         <span id="card_title">

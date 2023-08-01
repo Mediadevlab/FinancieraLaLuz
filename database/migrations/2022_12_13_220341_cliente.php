@@ -35,9 +35,9 @@ class Cliente extends Migration
             $table->string('telTrabajo_aval');
             $table->string('telCasa_aval');
             $table->string('fechaNac_aval');
-            $table->string('croquis_casa');
-            $table->string('croquis_trabajo');
-            $table->string('foto_cliente');
+            $table->string('croquis_casa')->nullable();
+            $table->string('croquis_trabajo')->nullable();
+            $table->string('foto_cliente')->nullable();
             $table->timestamps();
         });
     }

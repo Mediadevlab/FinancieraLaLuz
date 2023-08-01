@@ -249,8 +249,8 @@
 -->
 
 <div class="" style="text-align: center;">
-    Diseño y Desarrollo:<strong><a href="mailto:crivas.301284@gmail.com;" style="text-decoration: none;">
-            Ing. Cristopher L. Rivas</a></strong> |
+    Diseño y Desarrollo:<strong><a href="mailto:info@mediadevlab.com;" style="text-decoration: none;">
+            MDL</a></strong> |
     Derechos Reservados &copy; {{ date('Y') }} | Financiera La Luz</p>
 </div>
 

@@ -15,10 +15,18 @@ class Cobro extends Migration
     {
         Schema::create('cobro', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('total_cobro');
+            $table->float('total_cobro');
             $table->string('fecha_cobro');
-            $table->string('foto_comprobante');
+            $table->string('foto_comprobante')->nullable();
+            $table->string('num_recibo');
             $table->timestamps();
+
+            //Relación tabla prestamo - cobro
+            $table->foreignId('id_prestamo')
+                    ->nullable()
+                    ->constrained('prestamo')
+                    ->cascadeOnUpdate()
+                    ->nullOnDelete();
         });
     }
 

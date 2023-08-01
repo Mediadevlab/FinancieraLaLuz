@@ -5,17 +5,17 @@
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
+    <section class="py-4 container mt-3">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
                 @includeif('partials.errors')
-
-                <div class="card card-default">
-                <div class="card-header" style="border-top: solid 4px green;">
+                <h3 class="marco2"><i class="fa fa-users"><b></i> Crear Usuario</h3></b>
+                <div class="card cabecera1 card-default">
+                <div class="card-header cabecera2" style="border-top: solid 4px green;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <span id="card_title">
-                            {{ __('Crear Usuario') }}
+                            {{ __('Información de Usuario') }}
                         </span>
 
                         <div class="float-right">
@@ -25,6 +25,8 @@
                         </div>
                     </div>
                 </div>
+
+                
                     <div class="card-body">
                         <form method="POST" action="{{ route('users.store') }}"  role="form" enctype="multipart/form-data">
                             @csrf

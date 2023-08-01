@@ -54,7 +54,7 @@ class EmpleadoController extends Controller
         if( $request -> hasFile('foto_emp') ){
             $file = $request -> file('foto_emp');
             $destinationPath = 'img/featureds/';
-            $filename = time() . '-' . $file -> getClientOriginalName();
+            $filename = time() . '-' .$file -> getClientOriginalName();
             $uploadSuccess = $request -> file('foto_emp') -> move($destinationPath, $filename);
             $newEmp -> foto_emp = $destinationPath . $filename;
         }

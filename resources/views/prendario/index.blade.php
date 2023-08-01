@@ -27,6 +27,9 @@ Prendario
                             <a href="{{ route('prendarios.create') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
                                 <i class="fa fa-plus"></i>{{ __(' Generar Cliente Prendario') }}
                             </a>
+                            <a href="{{ route('prestamos.index') }}" class="btn btn-secondary btn-sm float-right" data-placement="left">
+                                <i class="fa fa-chevron-left"></i>{{ __(' Volver') }}
+                            </a>
                         </div>
                     </div>
                 </div>

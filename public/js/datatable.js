@@ -5,7 +5,7 @@ $(document).ready(function() {
         scrollY: '90vh',
         scrollX: true,
         scrollCollapse: true,
-        buttons: [ 'copy', 'excel', 'pdf', 'print', 'colvis'],
+        buttons: [ 'copy', 'excel', 'pdf', 'print'],
         
         language: {
             "lengthMenu": "Cantidad de registros a mostrar _MENU_ ",

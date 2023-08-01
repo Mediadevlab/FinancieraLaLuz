@@ -37,7 +37,8 @@
                 <div class="form-group mt-2">
                     <label for="tipo">Tipo</label>
                     <select class="form-control" name="tipo" id="tipo">
-                        <option selected>Hipotecario</option>
+                        <option selected>Seleccione tipo de préstamo...</option>
+                        <option value="Inactivo">Hipotecario</option>
                         <option value="Inactivo">Prendatario</option>
                         <option value="Inactivo">Fiduciario</option>
                         <option value="Inactivo">Mypime</option>
@@ -45,23 +46,24 @@
                 </div>
                 <div class="form-group mt-2">
                     {{ Form::label('Monto de Capital') }}
-                    {{ Form::number('capital', $prestamo->capital, ['class' => 'form-control' . ($errors->has('capital') ? ' is-invalid' : ''), 'placeholder' => 'Monto de Capital', 'id' => 'cr_monto']) }}
+                    {{ Form::number('capital', $prestamo->capital, ['class' => 'form-control' . ($errors->has('capital') ? ' is-invalid' : ''), 'placeholder' => 'Ingrese Capital', 'id' => 'cr_monto']) }}
                     {!! $errors->first('capital', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="form-group mt-2">
                     {{ Form::label('tipo_tasa') }}
-                    {{ Form::number('tipo_tasa', $prestamo->tipo_tasa, ['class' => 'form-control' . ($errors->has('tipo_tasa') ? ' is-invalid' : ''), 'placeholder' => 'Tipo Tasa', 'id' => 'in_monto']) }}
+                    {{ Form::number('tipo_tasa', $prestamo->tipo_tasa, ['class' => 'form-control' . ($errors->has('tipo_tasa') ? ' is-invalid' : ''), 'placeholder' => 'Ingrese tasa', 'id' => 'in_monto']) }}
                     {!! $errors->first('tipo_tasa', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="form-group mt-2">
                     {{ Form::label('Plazo ( Calculado en meses )') }}
-                    {{ Form::number('plazo', $prestamo->cuota, ['class' => 'form-control' . ($errors->has('plazo') ? ' is-invalid' : ''), 'placeholder' => 'Plazo', 'id' => 'cuota']) }}
+                    {{ Form::number('plazo', $prestamo->cuota, ['class' => 'form-control' . ($errors->has('plazo') ? ' is-invalid' : ''), 'placeholder' => 'Ingrese plazo', 'id' => 'cuota']) }}
                     {!! $errors->first('plazo', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="form-group mt-2">
                     <label for="forma_pago">Forma de Pago</label>
                     <select class="form-control" name="forma_pago" id="forma_pago">
-                        <option selected>Semanal</option>
+                        <option selected>Selecciones forma de pago...</option>
+                        <option value="Inactivo">Semanal</option>
                         <option value="Inactivo">Quincenal</option>
                         <option value="Inactivo">Mensual</option>
                     </select>

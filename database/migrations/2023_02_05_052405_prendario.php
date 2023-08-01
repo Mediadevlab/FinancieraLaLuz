@@ -27,7 +27,7 @@ class Prendario extends Migration
             $table->string('fecha_nac');
             $table->string('ciudad');
             $table->string('correo');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->string('desc_vehiculo');
             $table->string('placa');
             $table->string('color');
@@ -35,7 +35,7 @@ class Prendario extends Migration
             $table->string('marca');
             $table->string('anio');
             $table->string('documentacion');
-            $table->string('foto_vehiculo');
+            $table->string('foto_vehiculo')->nullable();
             $table->timestamps();
         });
     }

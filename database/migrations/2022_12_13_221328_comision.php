@@ -16,7 +16,7 @@ class Comision extends Migration
         //
         Schema::create('comision', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('pago');
+            $table->float('pago');
             $table->timestamps();
         });
     }

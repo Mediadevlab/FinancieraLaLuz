@@ -15,7 +15,7 @@
                 <div class="card-header cabecera2" style="border-top: solid 4px green;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <span id="card_title">
-                            {{ __('Crear Empleado') }}
+                            {{ __('Información del Empleado') }}
                         </span>
 
                         <div class="float-right">

@@ -26,6 +26,9 @@ Mypime
                             <a href="{{ route('mypimes.create') }}" class="btn btn-primary btn-sm float-right" data-placement="left">
                                 <i class="fa fa-plus"></i>{{ __(' Generar Cliente Mypime') }}
                             </a>
+                            <a href="{{ route('prestamos.index') }}" class="btn btn-secondary btn-sm float-right" data-placement="left">
+                                <i class="fa fa-chevron-left"></i>{{ __(' Volver') }}
+                            </a>
                         </div>
                     </div>
                 </div>

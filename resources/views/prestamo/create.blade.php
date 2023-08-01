@@ -25,7 +25,7 @@ Create Prestamo
                     <div style="display: flex; justify-content: space-between; align-items: center;">
 
                         <span id="card_title">
-                            {{ __('Desgloce de Información del Préstamo Simulado') }}
+                            {{ __('Desgloce de Información del Préstamo') }}
                         </span>
 
                         <div class="float-right">

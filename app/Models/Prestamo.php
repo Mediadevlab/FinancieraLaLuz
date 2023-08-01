@@ -48,6 +48,11 @@ class Prestamo extends Model
     return $this->hasMany('App\Models\Mypime');
   }
 
+  public function cobros()
+  {
+    return $this->hasMany(Cobro::class, 'id');
+  }
+
   public function get_buscarCliente($dni)
   {
     $this->db->where('dni', $dni);

@@ -21,10 +21,16 @@ class Cobro extends Model
 {
     public $table = "Cobro";
 
+    public function prestamos()
+    {
+      return $this->belongsTo(Prestamo::class, 'id_prestamo');
+    } 
+
     static $rules = [
 		'total_cobro' => 'required',
 		'fecha_cobro' => 'required',
 		'foto_comprobante' => 'required',
+		'num_recibo' => 'required',
     ];
 
     protected $perPage = 20;
@@ -34,7 +40,7 @@ class Cobro extends Model
      *
      * @var array
      */
-    protected $fillable = ['total_cobro','fecha_cobro','foto_comprobante'];
+    protected $fillable = ['total_cobro','fecha_cobro','foto_comprobante', 'num_recibo'];
 
 
 

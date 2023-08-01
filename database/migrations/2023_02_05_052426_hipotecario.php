@@ -27,10 +27,10 @@ class Hipotecario extends Migration
             $table->string('fecha_nac');
             $table->string('ciudad');
             $table->string('correo');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->string('desc_inmueble');
             $table->string('dir_inmueble');
-            $table->string('foto_inmueble');
+            $table->string('foto_inmueble')->nullable();
             $table->timestamps();
         });
     }

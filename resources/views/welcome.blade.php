@@ -578,9 +578,9 @@ of Simple CSS Waves-->
                 @else
                 <a href="{{ route('login') }}" class="btn btn-warning" style="color: white !important;">Ingresar</a>
 
-                @if (Route::has('register'))
+                <!-- @if (Route::has('register'))
                 <a href="{{ route('register') }}" class="btn btn-outline-info">Registrar</a>
-                @endif
+                @endif -->
                 @endauth
             </div>
             @endif
@@ -609,7 +609,7 @@ of Simple CSS Waves-->
 <!--Content starts-->
 <div class="content flex">
     <p>Diseño y Desarrollo:<strong><a href="mailto:crivas.301284@gmail.com;" style="text-decoration: none; color:#e67f0d;">
-                Ing. Cristopher L. Rivas</a></strong> |
+                MDL</a></strong> |
         Derechos Reservados &copy; {{ date('Y') }} | Financiera La Luz </p>
 </div>
 

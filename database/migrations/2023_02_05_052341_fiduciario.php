@@ -27,7 +27,7 @@ class Fiduciario extends Migration
             $table->string('fecha_nac');
             $table->string('ciudad');
             $table->string('correo');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->string('nombre_aval');
             $table->string('dni_aval');
             $table->string('rtn_aval');
@@ -39,7 +39,7 @@ class Fiduciario extends Migration
             $table->string('fecha_nac_aval');
             $table->string('ciudad_aval');
             $table->string('correo_aval');
-            $table->string('foto_aval');
+            $table->string('foto_aval')->nullable();
             $table->timestamps();
         });
     }

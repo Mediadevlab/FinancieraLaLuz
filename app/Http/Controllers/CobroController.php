@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cobro;
+use App\Models\Prestamo;
+use App\Models\Cliente;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 
@@ -35,7 +37,8 @@ class CobroController extends Controller
     {
         abort_if(Gate::denies('cobro_create'), 403);
         $cobro = new Cobro();
-        return view('cobro.create', compact('cobro'));
+        $prestamos = Prestamo::pluck('codigo','id');
+        return view('cobro.create', compact('cobro','prestamos'));
     }
 
     /**
